@@ -40,7 +40,7 @@ export default function App() {
           <div className=" lg:flex md:flex sm:flex flex-1 items-center justify-end font-normal hidden ">
             <ul className=" flex gap-8">
               <li className=" hover:text-slate-600 transition border-b-2 border-slate-900 hover:border-fuchsia-600 cursor-pointer">
-                <Link to="/">Trang chủ</Link>
+                <Link to="/home">Trang chủ</Link>
               </li>
               <li className=" hover:text-slate-600 transition border-b-2 border-slate-900 hover:border-fuchsia-600 cursor-pointer">
                 <Link to="/infor">Giới thiệu</Link>
@@ -60,9 +60,10 @@ export default function App() {
           </button>
         </div>
       </div>
-
+      {/* 123 */}
       <Routes>
-        <Route path="/" element={<Body></Body>} />
+        <Route path="/layout-tailwind" element={<Body></Body>} />
+        <Route path="/home" element={<Body></Body>} />
         <Route path="/infor" element={<Infor />} />
         <Route path="/service" element={<Service />} />
         <Route path="/contact" element={<Contact />} />
